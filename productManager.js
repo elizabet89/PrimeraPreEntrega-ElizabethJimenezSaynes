@@ -4,7 +4,7 @@ class ProductManager{
     this.products=[];
     this.Id=1;
   }
-  
+
   addProduct(title, description,price,thumbnail, code, stock){
 
     if(!title  || !description || !price || !thumbnail || !code || !stock ){
@@ -42,6 +42,4 @@ class ProductManager{
 
 }
 let Producto1=new ProductManager();
-Producto1.addProduct("mesa","para escritorio",30, "esta imdg" ,20,10);
 
-Producto1.addProduct("silla","para escritorio",30, "esta imdg" ,20,10);
