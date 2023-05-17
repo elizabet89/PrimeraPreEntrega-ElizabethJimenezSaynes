@@ -51,6 +51,5 @@ class ProductManager {
 
 const manager = new ProductManager();
 
-const result = manager.addProduct("laptop", "Descripción", 10, "thumbnail", "code", 100);
-console.log(result);
+
 
