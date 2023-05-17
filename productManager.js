@@ -8,14 +8,14 @@ class ProductManager{
   addProduct(title, description,price,thumbnail, code, stock){
 
     if(!title  || !description || !price || !thumbnail || !code || !stock ){
-      console.log("todos los campos son obligatorios")
+      return "todos los campos son obligatorios"
     }
 
     for(let product of this.products){
       
       if(product.code === code){
-        console.log("el producto ya existe")
-        return
+    
+        return "el producto ya existe"
        }
       
     }
@@ -33,12 +33,8 @@ class ProductManager{
        let valor=this.products
        valor.push(producto)
        this.Id++;
-       console.log(valor);
-
 
   }
-
-
 
 }
 let Producto1=new ProductManager();
